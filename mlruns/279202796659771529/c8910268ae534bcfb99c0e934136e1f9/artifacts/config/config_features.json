@@ -1,0 +1,6 @@
+{
+  "min_freq_hz": 1000,
+  "window_hz": 250,
+  "step_hz": 125,
+  "min_overlap_fraction": 0.2
+}

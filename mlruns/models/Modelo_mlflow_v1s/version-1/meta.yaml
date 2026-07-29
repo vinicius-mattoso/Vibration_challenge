@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1785290889333
+current_stage: None
+description: null
+last_updated_timestamp: 1785290889333
+name: Modelo_mlflow_v1s
+run_id: 9f9ae8d90db64118a4d26ce1b3bfeebc
+run_link: null
+source: file:///C:/Users/vinicius/Documents/MEUGITHUB/Vibration_challenge/mlruns/279202796659771529/9f9ae8d90db64118a4d26ce1b3bfeebc/artifacts/modelo_xgboost
+status: READY
+status_message: null
+storage_location: file:///C:/Users/vinicius/Documents/MEUGITHUB/Vibration_challenge/mlruns/279202796659771529/9f9ae8d90db64118a4d26ce1b3bfeebc/artifacts/modelo_xgboost
+user_id: null
+version: 1

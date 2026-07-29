@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vinicius/Documents/MEUGITHUB/Vibration_challenge/mlruns/279202796659771529/0af7aaf9ba6a403d9d500f7ae9cc26ea/artifacts
+end_time: 1785290767463
+entry_point_name: ''
+experiment_id: '279202796659771529'
+lifecycle_stage: active
+run_id: 0af7aaf9ba6a403d9d500f7ae9cc26ea
+run_name: xgb_baseline
+run_uuid: 0af7aaf9ba6a403d9d500f7ae9cc26ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785290765192
+status: 3
+tags: []
+user_id: vinicius

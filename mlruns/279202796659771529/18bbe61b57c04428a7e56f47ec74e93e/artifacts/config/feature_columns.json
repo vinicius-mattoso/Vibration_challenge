@@ -1,0 +1,16 @@
+[
+  "center_hz",
+  "energia_relativa_janela",
+  "log_psd_mean",
+  "log_psd_std",
+  "log_psd_max",
+  "log_psd_p90",
+  "log_psd_p10",
+  "log_psd_range",
+  "slope_log_psd",
+  "flatness_psd",
+  "n_picos_log",
+  "densidade_picos",
+  "std_sinal",
+  "max_abs_sinal"
+]

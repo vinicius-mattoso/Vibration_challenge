@@ -24,7 +24,7 @@ OUTPUTS_DIR = Path("outputs")
 def _write_report(
     path: Path, title: str, metrics_result: dict, extra: str = ""
 ) -> None:
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(f"# {title}\n\n")
         f.write("## Metrics\n\n")
         for k, v in metrics_result.items():
@@ -51,7 +51,7 @@ def run_part1(output_dir: Path) -> None:
     _write_report(report_path, "Part 1 — Carpet Detector Report", metrics_result)
 
     print(f"[Part 1] Metrics: {metrics_result}")
-    print(f"[Part 1] Report  → {report_path}")
+    print(f"[Part 1] Report  -> {report_path}")
 
     for sample_id, wave in waves.items():
         detector.plot_results(

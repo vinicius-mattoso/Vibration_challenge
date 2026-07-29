@@ -9,7 +9,7 @@ import pandas as pd
 from src.interface import AssetData, CarpetRegion, Wave
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = _PROJECT_ROOT / "data"
+DATA_DIR = _PROJECT_ROOT / "source"
 
 
 def _load_npz_waves(path: Path) -> List[Wave]:

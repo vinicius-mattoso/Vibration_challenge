@@ -1,0 +1,15 @@
+feature,importance
+log_psd_p90,0.48903185
+log_psd_mean,0.20337774
+log_psd_std,0.04634291
+std_sinal,0.037428178
+densidade_picos,0.033944424
+n_picos_log,0.029057676
+log_psd_max,0.025597677
+max_abs_sinal,0.024814205
+center_hz,0.022874078
+slope_log_psd,0.019919684
+flatness_psd,0.019452358
+energia_relativa_janela,0.018060837
+log_psd_range,0.016671583
+log_psd_p10,0.013426834

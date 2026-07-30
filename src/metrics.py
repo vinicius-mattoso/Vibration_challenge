@@ -176,4 +176,28 @@ def evaluate_part2(
 
     Example return: ``{"my_metric": 0.85, "another_metric": 42}``.
     """
-    raise NotImplementedError
+    sample_ids = sorted(set(predictions) & set(labels))
+    if not sample_ids:
+        return {"samples": 0, "accuracy": 0.0, "precision": 0.0, "recall": 0.0, "f1": 0.0}
+
+    tp = sum(predictions[sid] and labels[sid] for sid in sample_ids)
+    tn = sum((not predictions[sid]) and (not labels[sid]) for sid in sample_ids)
+    fp = sum(predictions[sid] and (not labels[sid]) for sid in sample_ids)
+    fn = sum((not predictions[sid]) and labels[sid] for sid in sample_ids)
+
+    precision = _safe_divide(tp, tp + fp)
+    recall = _safe_divide(tp, tp + fn)
+    f1 = _safe_divide(2 * precision * recall, precision + recall)
+
+    return {
+        "samples": len(sample_ids),
+        "accuracy": round(_safe_divide(tp + tn, len(sample_ids)), 4),
+        "precision": round(precision, 4),
+        "recall": round(recall, 4),
+        "f1": round(f1, 4),
+        "true_positive": tp,
+        "true_negative": tn,
+        "false_positive": fp,
+        "false_negative": fn,
+    }
+

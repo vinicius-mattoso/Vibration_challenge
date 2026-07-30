@@ -106,7 +106,7 @@ def run_part2(output_dir: Path) -> None:
     )
 
     print(f"[Part 2] Metrics: {metrics_result}")
-    print(f"[Part 2] Report  → {report_path}")
+    print(f"[Part 2] Report  -> {report_path}")
 
 
 def main() -> None:
